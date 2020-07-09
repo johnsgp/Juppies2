@@ -19,7 +19,7 @@
 
 /* Anagram Game Application */
 
-package eu.javaspecialists.courses.juppies2.anagrams.ui;
+package eu.javaspecialists.courses.juppies2.anagrams.ui.fx;
 
 import eu.javaspecialists.courses.juppies2.anagrams.lib.*;
 import javafx.application.*;
@@ -33,7 +33,7 @@ import javafx.stage.*;
 /**
  * Main window of the Anagram Game application.
  */
-public class AnagramsFx extends Application {
+public class Anagrams extends Application {
 
     private GridPane mainPane;
     private TextField scrambledWord;
@@ -50,7 +50,7 @@ public class AnagramsFx extends Application {
     /**
      * Creates new form Anagrams
      */
-    public AnagramsFx() {
+    public Anagrams() {
         wordLibrary = WordLibraries.createDefaultWordLibrary();
     }
 
@@ -165,7 +165,7 @@ public class AnagramsFx extends Application {
     }
 
     private void aboutMenuItemActionPerformed(ActionEvent evt) {
-        new AboutFx(mainPane.getBackground())
+        new About(mainPane.getBackground())
                 .showAndWait();
     }
 

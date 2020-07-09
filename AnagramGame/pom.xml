@@ -38,7 +38,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.4</version>
                 <configuration>
-                    <mainClass>eu.javaspecialists.courses.juppies2.anagrams.ui.Anagrams</mainClass>
+                    <mainClass>eu.javaspecialists.courses.juppies2.anagrams.ui.fx.Anagrams</mainClass>
                 </configuration>
             </plugin>
         </plugins>

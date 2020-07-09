@@ -19,7 +19,7 @@
 
 /* Anagram Game Application */
 
-package eu.javaspecialists.courses.juppies2.anagrams.ui;
+package eu.javaspecialists.courses.juppies2.anagrams.ui.fx;
 
 import javafx.geometry.*;
 import javafx.scene.control.*;
@@ -28,13 +28,13 @@ import javafx.scene.layout.*;
 /**
  * About dialog of the Anagram Game application.
  */
-public class AboutFx extends Dialog<Void> {
+public class About extends Dialog<Void> {
     /**
      * Creates new form About
      *
      * @param background
      */
-    public AboutFx(Background background) {
+    public About(Background background) {
         setTitle("About Anagrams");
         setResizable(true);
 

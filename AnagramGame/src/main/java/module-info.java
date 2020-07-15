@@ -3,6 +3,8 @@ module eu.javaspecialists.courses.juppies2.anagrams {
     requires java.logging;
 
     requires javafx.controls;
+    requires javafx.fxml;
 
-    exports eu.javaspecialists.courses.juppies2.anagrams.ui;
+    opens eu.javaspecialists.courses.juppies2.anagrams.ui.fx to javafx.graphics;
+    opens eu.javaspecialists.courses.juppies2.anagrams.ui.fxml to javafx.graphics, javafx.fxml;
 }

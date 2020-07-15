@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="eu.javaspecialists.courses.juppies2.anagrams.ui.fxml.AboutController"
+            maxWidth="320.0">
+    <padding>
+        <Insets topRightBottomLeft="12"/>
+    </padding>
+    <content>
+        <TextArea text="${'Anagrams\n\nCopyright (c) 2020 Your Name'}"
+                  background="${background}" editable="false" wrapText="true"
+                  prefRowCount="4" focusTraversable="false"/>
+    </content>
+    <ButtonType text="Close" buttonData="OK_DONE"/>
+</DialogPane>

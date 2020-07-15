@@ -19,6 +19,11 @@
             <version>${javafx-version}</version>
         </dependency>
         <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>${javafx-version}</version>
+        </dependency>
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.13</version>
@@ -38,7 +43,8 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.4</version>
                 <configuration>
-                    <mainClass>eu.javaspecialists.courses.juppies2.anagrams.ui.fx.Anagrams</mainClass>
+<!--                    <mainClass>eu.javaspecialists.courses.juppies2.anagrams.ui.fx.Anagrams</mainClass>-->
+                    <mainClass>eu.javaspecialists.courses.juppies2.anagrams.ui.fxml.Anagrams</mainClass>
                 </configuration>
             </plugin>
         </plugins>

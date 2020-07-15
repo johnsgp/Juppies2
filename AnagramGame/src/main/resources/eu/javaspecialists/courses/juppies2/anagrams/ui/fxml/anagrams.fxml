@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="eu.javaspecialists.courses.juppies2.anagrams.ui.fxml.AnagramsController"
+            prefWidth="360.0" prefHeight="200.0">
+    <top>
+        <MenuBar>
+            <Menu text="_File" mnemonicParsing="true">
+                <CustomMenuItem onAction="#aboutMenuItemActionPerformed">
+                    <content>
+                        <Label text="_About" mnemonicParsing="true">
+                            <tooltip>
+                                <Tooltip text="About"/>
+                            </tooltip>
+                        </Label>
+                    </content>
+                </CustomMenuItem>
+                <CustomMenuItem onAction="#exitMenuItemActionPerformed">
+                    <content>
+                        <Label text="_Exit" mnemonicParsing="true">
+                            <tooltip>
+                                <Tooltip text="Quit Team, Quit!"/>
+                            </tooltip>
+                        </Label>
+                    </content>
+                </CustomMenuItem>
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+        <GridPane fx:id="mainPane" vgap="12">
+            <padding>
+                <Insets topRightBottomLeft="12"/>
+            </padding>
+            <columnConstraints>
+                <ColumnConstraints minWidth="110"/>
+                <ColumnConstraints minWidth="0" hgrow="ALWAYS"/>
+            </columnConstraints>
+            <Label text="Scrambled Word:"
+                   GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <TextField fx:id="scrambledWord" prefColumnCount="20"
+                       editable="false" focusTraversable="false"
+                       GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <TextField fx:id="guessedWord" prefColumnCount="20"
+                       GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            <Label text="_Your Guess:" mnemonicParsing="true" labelFor="$guessedWord"
+                   GridPane.columnIndex="0" GridPane.rowIndex="1">
+            </Label>
+            <Label fx:id="feedbackLabel"
+                   GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        </GridPane>
+    </center>
+    <bottom>
+        <HBox spacing="12" alignment="CENTER_RIGHT">
+            <padding>
+                <Insets topRightBottomLeft="12"/>
+            </padding>
+            <Button fx:id="guessButton" text="_Guess" mnemonicParsing="true"
+                    onAction="#guessedWordActionPerformed">
+                <tooltip>
+                    <Tooltip text="Guess the scrambled word."/>
+                </tooltip>
+            </Button>
+            <Button fx:id="nextTrial" text="_New Word" mnemonicParsing="true"
+                    onAction="#nextTrialActionPerformed">
+                <tooltip>
+                    <Tooltip text="Fetch a new word."/>
+                </tooltip>
+            </Button>
+        </HBox>
+    </bottom>
+</BorderPane>

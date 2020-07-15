@@ -41,6 +41,7 @@ public class About extends Dialog<Void> {
         DialogPane dialogPane = getDialogPane();
         dialogPane.setPadding(new Insets(12));
         dialogPane.setMaxWidth(320);
+        dialogPane.getStylesheets().add("styles.css");
 
         TextArea copyrightTextArea = new TextArea();
         copyrightTextArea.setBackground(background);
